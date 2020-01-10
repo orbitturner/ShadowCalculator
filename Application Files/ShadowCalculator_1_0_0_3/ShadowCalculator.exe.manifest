@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ShadowCalculator.exe" version="1.0.0.3" publicKeyToken="1bead2358696cbac" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="calc.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ShadowCalculator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ShadowCalculator.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Options de manifeste UAC
+          Pour changer le niveau du contrôle de compte d'utilisateur Windows, remplacez le
+          nœud requestedExecutionLevel par l'une des propositions suivantes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Pour utiliser la virtualisation des fichiers et du Registre afin d'assurer
+         une compatibilité ascendante, supprimez le nœud requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MaterialSkin.dll" size="587776">
+      <assemblyIdentity name="MaterialSkin" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uYed8V6CxS6RZscfexd8V71MgomCGmWp0/Uiiz9ga04=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ShadowCalculator.exe" size="110040">
+      <assemblyIdentity name="ShadowCalculator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>zj41dVz6qj2F9ypVCLYtRRZz4i8DTIQ9D8VkHOCA6Nw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="calc.ico" size="12206">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>W9axeMNYsxxMMDCpX+pKCLNlJ4crSgwCyu7X4Dt67/0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ShadowCalculator.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ji8aT6+d4QyGsLkWKNdTYyE7mNtRXIN9y+Xmyl/UOJU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=OLT-SHADOW-PC\orbit" issuerKeyHash="b57b457dce5262b81b78d2ab457150b28eb5e4ff" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>0ly6i67sBKL1IkFMpjadu4hOLbqIIkYn4GHQKlA4Azs=</DigestValue></Reference></SignedInfo><SignatureValue>LK4Avklw+IEo2297iiz3peJjFIpakn0lrvvlPO2tTCxIQgvW+YDr/6gZQv+R4sCTFYDTYoZmmhWWTaA2ZFEJWQH1dGfRKvIkXrJ3Ml9ieEfGIEZvUps7wmSVJE53mfDG6ZAKqq4bNBBokbmL6n0MXT1n47AMpoNdNswVmY/6KWc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>q1pkrs9l36QfNJ2fejWpyFjGeXaf5XcvfXTcwEf0E0VoPU2+fV3YRC4eW393rJUNZsWha9gLifBUZPy7GulEl38TmgSjeM4IJ3AV1PmAvYXOZ/VJ+rJDuWyiqD2o+WA5VMWWDw51wdV7EGVyIvZfcDudRKZvDWSrx3B1R4/qjT0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3b0338502ad061e027462288ba2d4e88bb9d36a64c4122f5a204ecae8bba5cd2" Description="" Url=""><as:assemblyIdentity name="ShadowCalculator.exe" version="1.0.0.3" publicKeyToken="1bead2358696cbac" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=OLT-SHADOW-PC\orbit</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ZGCZxTS04wFQLP4ssK7yd8eU/mZAENRoh3Owg0wqq5U=</DigestValue></Reference></SignedInfo><SignatureValue>iWshiFv9YpRR3n0dVUeosX7RD2tZC50dXCDjmaF+C3QO7fKo5yEhqn1UyPyATnh7KhBBF4G9ipZYCB3QPDUZhJ907xfv035RwiZxYtuGoIEtaaf/CiRcAVya6bOqYxhlW5AvgjzqwDvFcIA+UHt0OaayAaax3QVRcTqOaE/0q0g=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>q1pkrs9l36QfNJ2fejWpyFjGeXaf5XcvfXTcwEf0E0VoPU2+fV3YRC4eW393rJUNZsWha9gLifBUZPy7GulEl38TmgSjeM4IJ3AV1PmAvYXOZ/VJ+rJDuWyiqD2o+WA5VMWWDw51wdV7EGVyIvZfcDudRKZvDWSrx3B1R4/qjT0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQJYLybw3nibJP/+pfzM4H/DANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYATwBMAFQALQBTAEgAQQBEAE8AVwAtAFAAQwBcAG8AcgBiAGkAdDAeFw0xOTEyMjExMzE3MDlaFw0yMDEyMjAxOTE3MDlaMDExLzAtBgNVBAMeJgBPAEwAVAAtAFMASABBAEQATwBXAC0AUABDAFwAbwByAGIAaQB0MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrWmSuz2XfpB80nZ96NanIWMZ5dp/ldy99dNzAR/QTRWg9Tb59XdhELh5bf3eslQ1mxaFr2AuJ8FRk/Lsa6USXfxOaBKN4zggncBXU+YC9hc5n9Un6skO5bKKoPaj5YDlUxZYPDnXB1XsQZXIi9l9wO51Epm8NZKvHcHVHj+qNPQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAJ38AGiCEwoc5ymat68PnMgQ6OFnGGNSJO9WgAqUA17JMIATJoFuvv7LWT3gRvSkvOAf/N36LFsFrNkdKU/uXRHi5GQZrhoGILpqDD399xuJpDyOW7BDFI3A39vo5zX0wL53NSfQHNiR5qd1oNxxLgKTkVQDowNk5hUzO4Vw0/h1</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
