@@ -34,7 +34,7 @@ ___
 ![Image of SC](https://github.com/orbitturner/ShadowCalculator/blob/master/ShadowCalculator%20-%20Presentation/Onglet%205%20-%20About.png?raw=true)
 
 
-For further demos check-out my website : http://orbitturner.yj.fr/
+For further demos check-out my website : http://orbitturner.com/
 
 ______________________________________________________
 Developed by Mohamed GUEYE (OrbitTurner).
